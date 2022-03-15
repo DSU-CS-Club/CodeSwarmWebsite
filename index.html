@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link rel="shortcut icon" href="/images/hornet.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,12 +27,13 @@
       <header id="header" class="alt">
         <span class="logo">
           <a href="index.html">
-            <img src="images/Code Swarm 3.3.png" alt="" style="width: 15vw" />
+            <img src="images/logo.png" alt="" style="width: 15vw" />
           </a>
         </span>
         <h1>Code Swarm Hackathon</h1>
         <p>
-          A hackathon from the Computer Science Club at Delaware State University.
+          A hackathon from the Computer Science Club at Delaware State
+          University.
         </p>
       </header>
 
@@ -40,6 +42,7 @@
         <ul>
           <li><a href="#welcome" class="active">Welcome</a></li>
           <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#prizes">Prizes</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="register.html">Register</a></li>
@@ -53,7 +56,7 @@
 
       <!-- Main -->
       <div id="main">
-        <!-- About -->
+        <!-- Welcome -->
         <section id="welcome" class="main">
           <div class="spotlight">
             <div class="content">
@@ -76,185 +79,334 @@
         </section>
 
         <!-- Register Section -->
-        
 
         <!-- Schedule -->
         <section id="schedule" class="main special">
           <header class="major">
             <h2>Schedule</h2>
           </header>
-            <div class="table-wrapper">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>Doors Open</td>
-                    <td>4:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>Opening Ceremony</td>
-                    <td>5:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>Hackathon Begins!</td>
-                    <td>5:30pm</td>
-                  </tr>
-                  <tr>
-                    <td>Snack</td>
-                    <td>7:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>Dinner</td>
-                    <td>8:00pm</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" class="small">
-                      Workshops will take place throughout the day
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <ul
+            class="nav nav-pills mb-1 nav-justified"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item schedule-pill" role="presentation">
+              <button
+                class="nav-link schedule-link active"
+                id="nav-day1-pill"
+                data-bs-toggle="pill"
+                data-bs-target="#pill-day1"
+                type="button"
+                role="tab"
+              >
+                <p>Friday April 8, 2022</p>
+              </button>
+            </li>
+            <li class="nav-item schedule-pill" role="presentation">
+              <button
+                class="nav-link schedule-link"
+                id="nav-day2-pill"
+                data-bs-toggle="pill"
+                data-bs-target="#pill-day2"
+                type="button"
+                role="tab"
+              >
+                <p>Saturday April 9, 2022</p>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="pill-day1"
+              role="tabpanel"
+            >
+              <div class="table-wrapper">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Doors Open</td>
+                      <td>4:00pm</td>
+                    </tr>
+                    <tr>
+                      <td>Opening Ceremony</td>
+                      <td>5:00pm</td>
+                    </tr>
+                    <tr>
+                      <td>Hackathon Begins!</td>
+                      <td>5:30pm</td>
+                    </tr>
+                    <tr>
+                      <td>Snack</td>
+                      <td>7:00pm</td>
+                    </tr>
+                    <tr>
+                      <td>Dinner</td>
+                      <td>8:00pm</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="small">
+                        Workshops will take place throughout the event
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
+            <div class="tab-pane fade" id="pill-day2" role="tabpanel">
+              <div class="table-wrapper">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Breakfast</td>
+                      <td>9:00am</td>
+                    </tr>
+                    <tr>
+                      <td>Pre-Evaluations</td>
+                      <td>11:00am</td>
+                    </tr>
+                    <tr>
+                      <td>Lunch</td>
+                      <td>12:00pm</td>
+                    </tr>
+                    <tr>
+                      <td>Hacking Ends</td>
+                      <td>3:00pm</td>
+                    </tr>
+                    <tr>
+                      <td>Judging Begins</td>
+                      <td>3:30pm</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="small">
+                        Workshops will take place throughout the event
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Prizes Section -->
         <section id="prizes" class="main special">
           <header class="major mb-0">
             <h2>Prizes</h2>
-            <p>
-              Grand Prizes
-            </p>
           </header>
           <div class="container">
             <div class="row mb-4">
+              <p>Grand Prizes</p>
               <div class="col">
                 <div class="card prize-block">
-                  <img src="images/ps5.png" class="card-img prize-image">
+                  <img
+                    src="images/prizes/surface-laptop.png"
+                    class="card-img prize-image"
+                  />
                   <div class="img-overlay">
                     <div class="img-text">1st Place</div>
+                    <div class="img-text">Surface Laptop 4</div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card prize-block">
-                  <img src="images/ps5.png" class="card-img prize-image">
+                  <img
+                    src="images/prizes/nintendo-switch.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">2nd Place</div>
+                    <div class="img-text">Switch/Switch Lite</div>
+                  </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card prize-block">
-                  <img src="images/ps5.png" class="card-img prize-image">
+                  <img
+                    src="images/prizes/homepod.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">3rd Place</div>
+                    <div class="img-text">Homepod Mini</div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="row mb-4">
+              <p>Scavenger Hunt Prizes</p>
               <div class="col">
-                <button type="button" class="faq-item" data-bs-toggle="collapse" data-bs-target="#scavenger">Scavenger Hunt Prizes</button>
-                <div class="container collapse" id="scavenger">
-                  <div class="row" >
-
-                    <div class="col">
-                      <div class="card prize-block">
-                        <img src="images/ps5.png" class="card-img prize-image">
-                        <div class="img-overlay">
-                          <div class="img-text">1st Place</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card prize-block">
-                        <img src="images/ps5.png" class="card-img prize-image">
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card prize-block">
-                        <img src="images/ps5.png" class="card-img prize-image">
-                      </div>
-                    </div>
+                <div class="card prize-block">
+                  <img
+                    src="images/prizes/ipad.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">iPad Air</div>
                   </div>
-                  
-                </div>  
+                </div>
               </div>
               <div class="col">
-                <button type="button" class="faq-item" data-bs-toggle="collapse" data-bs-target="#trivia">Trivia Prizes</button>
-                  <div class="collapse" id="trivia">
-                    <div class="card card-body">
-                      In order to participate in this event you must be an undergraduate student currently attending 
-                      any college/university and you must be over 18 years old. Participants can be from any major! 
-                    </div>
+                <div class="card prize-block">
+                  <img
+                    src="images/prizes/samsung1.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">Samsung Gaming Monitor</div>
                   </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card prize-block">
+                  <img
+                    src="images/prizes/beats.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">Beats Fit Pro Earbuds</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <p>Trivia Prizes</p>
+              <div class="col">
+                <div class="card prize-block">
+                  <img
+                    src="images/prizes/apple-watch.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">Apple Watch Series 7</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card prize-block">
+                  <img
+                    src="images/prizes/visa.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">$100 Visa Gift Card</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card prize-block">
+                  <img
+                    src="images/prizes/fire-stick.png"
+                    class="card-img prize-image"
+                  />
+                  <div class="img-overlay">
+                    <div class="img-text">Fire TV Stick 4K</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section>        
+        </section>
 
         <!-- FAQ Section -->
         <section id="faq" class="main special">
           <header class="major">
             <h2>FAQ</h2>
-            <p>
-              Frequently Asked Questions
-            </p>
+            <p>Frequently Asked Questions</p>
           </header>
           <div class="container">
             <div class="row mb-4">
               <div class="col">
-                <button type="button" class="faq-item" data-bs-toggle="collapse" data-bs-target="#faq1">Who can attend?</button>
-                
-                  <div class="collapse" id="faq1">
-                    <div class="card card-body">
-                      In order to participate in this event you must be an undergraduate student currently attending 
-                      any college/university and you must be over 18 years old. Participants can be from any major! 
-                    </div>
+                <button
+                  type="button"
+                  class="faq-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                >
+                  Who can attend?
+                </button>
+
+                <div class="collapse" id="faq1">
+                  <div class="card card-body">
+                    In order to participate in this event you must be an
+                    undergraduate student currently attending any
+                    college/university and you must be over 18 years old.
+                    Participants can be from any major!
                   </div>
-                
+                </div>
               </div>
               <div class="col">
-                <button type="button" class="faq-item" data-bs-toggle="collapse" data-bs-target="#faq2">What is a hackathon?</button>
-                
-                  <div class="collapse" id="faq2">
-                    <div class="card card-body">
-                      In order to participate in this event you must be an undergraduate student currently attending 
-                      any college/university and you must be over 18 years old. Participants can be from any major! 
-                    </div>
+                <button
+                  type="button"
+                  class="faq-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
+                >
+                  What is a hackathon?
+                </button>
+
+                <div class="collapse" id="faq2">
+                  <div class="card card-body">
+                    In order to participate in this event you must be an
+                    undergraduate student currently attending any
+                    college/university and you must be over 18 years old.
+                    Participants can be from any major!
                   </div>
-                
+                </div>
               </div>
             </div>
             <div class="row mb-4">
               <div class="col">
-                <button type="button" class="faq-item" data-bs-toggle="collapse" data-bs-target="#faq3">Who can attend?</button>
-                
-                  <div class="collapse" id="faq3">
-                    <div class="card card-body">
-                      In order to participate in this event you must be an undergraduate student currently attending 
-                      any college/university and you must be over 18 years old. Participants can be from any major! 
-                    </div>
+                <button
+                  type="button"
+                  class="faq-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3"
+                >
+                  Who can attend?
+                </button>
+
+                <div class="collapse" id="faq3">
+                  <div class="card card-body">
+                    In order to participate in this event you must be an
+                    undergraduate student currently attending any
+                    college/university and you must be over 18 years old.
+                    Participants can be from any major!
                   </div>
-                
+                </div>
               </div>
               <div class="col">
-                <button type="button" class="faq-item" data-bs-toggle="collapse" data-bs-target="#faq4">What is a hackathon?</button>
-                
-                  <div class="collapse" id="faq4">
-                    <div class="card card-body">
-                      In order to participate in this event you must be an undergraduate student currently attending 
-                      any college/university and you must be over 18 years old. Participants can be from any major! 
-                    </div>
+                <button
+                  type="button"
+                  class="faq-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                >
+                  What is a hackathon?
+                </button>
+
+                <div class="collapse" id="faq4">
+                  <div class="card card-body">
+                    In order to participate in this event you must be an
+                    undergraduate student currently attending any
+                    college/university and you must be over 18 years old.
+                    Participants can be from any major!
                   </div>
-                
+                </div>
               </div>
             </div>
             <div class="row">
               <div>
-                
-                <button type="button" class="faq-item" data-bs-toggle="collapse" data-bs-target="#codeofconduct">Code of Conduct</button>
-                
-                  <div class="collapse" id="codeofconduct">
-                    <div class="card card-body">
-                      In order to participate in this event you must be an undergraduate student currently attending 
-                      any college/university and you must be over 18 years old. Participants can be from any major! 
-                    </div>
-                  </div>
-                </div>
+                <button
+                  type="button"
+                  class="faq-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#codeofconduct"
+                >
+                  Code of Conduct
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -266,77 +418,64 @@
           </header>
           <ul class="features">
             <li>
-              <span class="image"><img src="images/jameel.png" alt="" /></span>
+              <span class="image"
+                ><img src="images/profiles/jameel.png" alt=""
+              /></span>
               <h3>Jameel Brice</h3>
-              <p>
-                Computer Science Club<br/>President
-              </p>
+              <p>Computer Science Club<br />President</p>
             </li>
             <li>
-              <span class="image"><img src="images/kassandra.jpg"/></span>
+              <span class="image"
+                ><img src="images/profiles/kassandra.jpg"
+              /></span>
               <h3>Kassandra Tchemi</h3>
-              <p>
-                Computer Science Club<br/>Vice President
-              </p>
+              <p>Computer Science Club<br />Vice President</p>
             </li>
             <li>
-              <span class="image"><img src="images/prentice.png"/></span>
+              <span class="image"
+                ><img src="images/profiles/prentice.png"
+              /></span>
               <h3>Prentice Williams</h3>
-              <p>
-                Computer Science Club<br/>Treasurer
-              </p>
-              <li>
-                <span class="image"><img src="images/lillie.png"/></span>
-                <h3>Lillie Hunter</h3>
-                <p>
-                  Computer Science Club<br/>Event Coordinator
-                </p>
-              </li>
+              <p>Computer Science Club<br />Treasurer</p>
+            </li>
+
+            <li>
+              <span class="image"
+                ><img src="images/profiles/lillie.png"
+              /></span>
+              <h3>Lillie Hunter</h3>
+              <p>Computer Science Club<br />Event Coordinator</p>
             </li>
           </ul>
           <ul class="features">
             <li>
-              <span class="image"><img src="images/gio.png"/></span>
+              <span class="image"><img src="images/profiles/gio.png" /></span>
               <h3>Giovane Barnes</h3>
-              <p>
-                Computer Science Club<br/>Corresponding Secretary
-              </p>
+              <p>Computer Science Club<br />Corresponding Secretary</p>
             </li>
             <li>
-              <span class="image"><img src="images/zora.png"/></span>
+              <span class="image"><img src="images/profiles/zora.png" /></span>
               <h3>Zora Johnson</h3>
-              <p>
-                Computer Science Club<br/>Recording Secretary
-              </p>
+              <p>Computer Science Club<br />Recording Secretary</p>
             </li>
             <li>
-              <span class="image"><img src="images/jess.png"/></span>
+              <span class="image"><img src="images/profiles/jess.png" /></span>
               <h3>Jessica Nyguiyim</h3>
-              <p>
-                Computer Science Club<br/>Miss Computer Science
-              </p>
-              <li>
-                <span class="image"><img src="images/nigel.png"/></span>
-                <h3>Nigel Jennings</h3>
-                <p>
-                  Computer Science Club<br/>Mister Computer Science
-                </p>
-              </li>
+              <p>Computer Science Club<br />Miss Computer Science</p>
+            </li>
+
+            <li>
+              <span class="image"><img src="images/profiles/nigel.png" /></span>
+              <h3>Nigel Jennings</h3>
+              <p>Computer Science Club<br />Mister Computer Science</p>
             </li>
           </ul>
-          <footer class="major">
-            <ul class="actions special">
-              <li><a href="generic.html" class="button">Learn More</a></li>
-            </ul>
-          </footer>
         </section>
-
-        
       </div>
 
       <!-- Footer -->
       <footer id="footer">
-        <section>
+        <!-- <section>
           <h2>Aliquam sed mauris</h2>
           <p>
             Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat
@@ -347,49 +486,160 @@
           <ul class="actions">
             <li><a href="generic.html" class="button">Learn More</a></li>
           </ul>
-        </section>
+        </section> -->
         <section>
-          <h2>Etiam feugiat</h2>
+          <h2>Contact</h2>
           <dl class="alt">
             <dt>Address</dt>
-            <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-            <dt>Phone</dt>
-            <dd>(000) 000-0000 x 0000</dd>
+            <dd>1200 North Dupont Hgwy &bull; Dover, DE 19901 &bull; USA</dd>
             <dt>Email</dt>
-            <dd><a href="#">information@untitled.tld</a></dd>
+            <dd><a href="#">board@csclubdsu.org</a></dd>
           </dl>
           <ul class="icons">
             <li>
-              <a href="#" class="icon brands fa-twitter alt"
-                ><span class="label">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands fa-facebook-f alt"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands fa-instagram alt"
+              <a
+                href="https://www.instagram.com/csclub.dsu/"
+                class="icon brands fa-instagram alt"
                 ><span class="label">Instagram</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands fa-github alt"
+              <a
+                href="https://github.com/DSU-CS-Club"
+                class="icon brands fa-github alt"
                 ><span class="label">GitHub</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands fa-dribbble alt"
-                ><span class="label">Dribbble</span></a
               >
             </li>
           </ul>
         </section>
         <p class="copyright">
-          &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+          &copy;2022 Code Swarm. Design:
+          <a href="https://html5up.net">HTML5 UP</a>.
         </p>
       </footer>
+    </div>
+    <div
+      class="modal fade"
+      id="codeofconduct"
+      tabindex="-1"
+      style="z-index: 10001"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3
+              class="modal-title"
+              id="modalTitle"
+              style="color: black; font-weight: bolder"
+            >
+              Code of Conduct
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="min-width: auto"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h5 style="color: black; font-weight: bold">General</h5>
+                <p>
+                  This code of conduct serves to ensure that everybody and
+                  anybody who wishes to participate is able to do so. The
+                  Computer Science Club is committed to providing a safe and
+                  welcoming space, without regard to age, gender, race,
+                  ethnicity, nationality, sexual orientation, gender identity,
+                  gender expression, mental or physical disability, physical
+                  appearance, neuro(a)typicality, religion, level of knowledge,
+                  level of experience, parental status, marital status,
+                  socioeconomic status or background, political affiliation, or
+                  any other attribute.
+                  <br />
+                  <br />
+                  We want everyone to have a good time at Code Swarm 2022. To
+                  that end, if you have any questions, comments, or concerns,
+                  please do not hesitate to reach out to any of the organizers.
+                  We're also adopting the following Guidelines for Awesomeness
+                  for all participants.
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h5 style="color: black; font-weight: bold">Do Not Harass</h5>
+                <p>
+                  Harassment is any unwelcome or hostile behavior towards
+                  another person for any reason. This includes, but is not
+                  limited to, offensive verbal comments related to personal
+                  characteristics or choices, sexual images or comments,
+                  deliberate intimidation, bullying, stalking, following,
+                  harassing photography or recording, sustained disruption of
+                  discussion or events, nonconsensual publication of private
+                  comments, inappropriate physical contact, or unwelcome sexual
+                  attention. Conduct need not be intentional to be harassment.
+                  <br />
+                  <br />
+                  The Code Swarm 2022 team will not tolerate such behavior.
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h5 style="color: black; font-weight: bold">
+                  Respect the Opinions and Abilities of Others
+                </h5>
+                <p>
+                  Code Swarm 2022 is designed as a place for people of all
+                  different skill levels and approaches to meet and work
+                  together toward common goals. As a result, we do not expect
+                  that everybody will share the same opinion. However, we do
+                  expect that disagreement is done respectfully. Additionally,
+                  we expect that members will educate others respectfully. To
+                  this end, do not assume anybody else’s level of expertise or
+                  knowledge. Do not belittle a lack of information, or insist on
+                  unnecessary precision. We are all learning, so afford
+                  others—as well as yourself—room to grow.
+                  <br />
+                  <br />
+                  While this document exists primarily to prevent certain bad
+                  behavior, we also believe that our community members should
+                  work towards a higher standard. To that end, we strongly
+                  encourage the following conduct, though they are considered
+                  aspirational rather than necessary.
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h5 style="color: black; font-weight: bold">
+                  Build With, Not For
+                </h5>
+                <p>
+                  Work to ensure that the community is well-represented in all
+                  stages of development. Seek out those who are
+                  under-represented, and remove barriers to access. Listen as
+                  much—or more—than you speak, and give full consideration to
+                  all ideas, even if they seem improbable at first.
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h5 style="color: black; font-weight: bold">
+                  Empower, Experiment, and Find a Way for Everybody to
+                  Contribute
+                </h5>
+                <p>
+                  When more people share their knowledge and skills, they give a
+                  project a greater chance to succeed. When somebody shows up
+                  with an unusual skill, look for ways to fit them into the team
+                  rather than reasons why it wouldn’t work. Experiment with new
+                  approaches, and don’t be afraid to try something that might
+                  not work. The Code Swarm 2022 team reserves the right to expel
+                  anyone from the hackathon who displays such behavior.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Scripts -->

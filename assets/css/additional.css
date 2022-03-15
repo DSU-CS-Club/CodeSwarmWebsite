@@ -21,7 +21,13 @@
 }
 
 .prize-block:hover .prize-image {
-  opacity: 0.3;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .prize-block:hover .img-overlay {
@@ -37,4 +43,17 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.img-text {
+  font-weight: bold;
+  color: white;
+}
+
+.schedule-pill {
+  padding: 0 0 0 0;
+}
+
+.schedule-link {
+  padding: 0 0;
 }

@@ -3425,7 +3425,8 @@ body.is-preload #header.alt .logo {
   vertical-align: middle;
 }
 
-#nav ul li:last-child {
+.lastli {
+  display: inline-block;
   position: absolute;
   right: 10px;
 }

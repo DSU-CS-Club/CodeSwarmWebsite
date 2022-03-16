@@ -57,3 +57,13 @@
 .schedule-link {
   padding: 0 0;
 }
+
+.profile {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.profile:hover {
+  top: -10px;
+}

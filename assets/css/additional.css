@@ -20,36 +20,6 @@
   width: 100%;
 }
 
-.prize-block:hover .prize-image {
-  -webkit-filter: brightness(50%);
-  filter: brightness(50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.prize-block:hover .img-overlay {
-  opacity: 1;
-}
-
-.img-overlay {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.img-text {
-  font-weight: bold;
-  color: white;
-}
-
 .schedule-pill {
   padding: 0 0 0 0;
 }
@@ -58,12 +28,79 @@
   padding: 0 0;
 }
 
-.profile {
+.profile,
+.sponsor {
   position: relative;
   top: 0;
   transition: top ease 0.5s;
 }
 
-.profile:hover {
+.profile:hover,
+.sponsor:hover {
   top: -10px;
+}
+
+.prize-grid {
+  /* User input values. */
+  --grid-layout-gap: 10px;
+  --grid-column-count: 3;
+  --grid-item--min-width: 300px;
+
+  /* Calculated values. */
+  --gap-count: calc(var(--grid-column-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+  --grid-item--max-width: calc(
+    (100% - var(--total-gap-width)) / var(--grid-column-count)
+  );
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr)
+  );
+  grid-gap: var(--grid-layout-gap);
+  grid-auto-flow: dense;
+}
+
+.prize {
+  position: relative;
+}
+
+.prize img {
+  min-width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  border-radius: 2%;
+}
+
+.prize:hover img {
+  filter: brightness(60%) blur(5px);
+}
+
+.prize:hover .prize-overlay {
+  opacity: 1;
+}
+
+.prize-overlay {
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: fit-content;
+}
+
+.prize-text {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.prize-overlay hr {
+  margin: 10px 0px;
 }

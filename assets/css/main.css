@@ -133,6 +133,7 @@ q:after {
 }
 
 table {
+  table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -2823,6 +2824,7 @@ table tbody tr {
   border: solid 1px;
   border-left: 0;
   border-right: 0;
+  
 }
 
 table td {
@@ -2872,6 +2874,7 @@ table.alt tfoot {
 
 table tbody tr {
   border-color: rgba(255, 255, 255, 0.35);
+  
 }
 
 table tbody tr:nth-child(2n + 1) {
@@ -3722,6 +3725,7 @@ body.is-preload #header.alt .logo {
 
 #main table tbody tr {
   border-color: #dddddd;
+  
 }
 
 #main table tbody tr:nth-child(2n + 1) {

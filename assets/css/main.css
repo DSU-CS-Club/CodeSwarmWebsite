@@ -3323,7 +3323,7 @@ body.is-preload #header.alt .logo {
   text-align: center;
 }
 
-#reg {
+#nav2 {
   -moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease,
     border-top-right-radius 0.2s ease, padding 0.2s ease;
   -webkit-transition: background-color 0.2s ease,
@@ -3348,28 +3348,28 @@ body.is-preload #header.alt .logo {
 }
 
 #nav button,
-#reg button {
+#nav2 button {
   display: none;
 }
 
 #nav input,
 #nav select,
 #nav textarea,
-#reg input,
-#reg select,
-#reg textarea {
+#nav2 input,
+#nav2 select,
+#nav2 textarea {
   color: #636363;
 }
 
 #nav a:hover,
-#reg a:hover {
+#nav2 a:hover {
   color: #636333;
 }
 
 #nav strong,
 #nav b,
-#reg strong,
-#reg b {
+#nav2 strong,
+#nav2 b {
   color: #636363;
 }
 
@@ -3379,45 +3379,45 @@ body.is-preload #header.alt .logo {
 #nav h4,
 #nav h5,
 #nav h6,
-#reg h1,
-#reg h2,
-#reg h3,
-#reg h4,
-#reg h5,
-#reg h6 {
+#nav2 h1,
+#nav2 h2,
+#nav2 h3,
+#nav2 h4,
+#nav2 h5,
+#nav2 h6 {
   color: #636363;
 }
 
 #nav blockquote,
-#reg blockquote {
+#nav2 blockquote {
   border-left-color: #dddddd;
 }
 
 #nav code,
-#reg code {
+#nav2 code {
   background: rgba(222, 222, 222, 0.25);
   border-color: #dddddd;
 }
 
 #nav hr,
-#reg hr {
+#nav2 hr {
   border-bottom-color: #dddddd;
 }
 
 #nav + #main,
-#reg + #main {
+#nav2 + #main {
   padding-top: 4.25em;
 }
 
 #nav ul,
-#reg ul {
+#nav2 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 #nav ul li,
-#reg ul li {
+#nav2 ul li {
   -moz-transition: margin 0.2s ease;
   -webkit-transition: margin 0.2s ease;
   -ms-transition: margin 0.2s ease;
@@ -3428,9 +3428,14 @@ body.is-preload #header.alt .logo {
   vertical-align: middle;
 }
 
+.lastli {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
 
 #nav ul li a,
-#reg ul li a {
+#nav2 ul li a {
   -moz-transition: font-size 0.2s ease;
   -webkit-transition: font-size 0.2s ease;
   -ms-transition: font-size 0.2s ease;
@@ -3445,18 +3450,18 @@ body.is-preload #header.alt .logo {
 }
 
 #nav ul li a:hover,
-#reg ul li a:hover {
+#nav2 ul li a:hover {
   background-color: rgba(222, 222, 222, 0.25);
 }
 
 #nav ul li a.active,
-#reg ul li a.active {
+#nav2 ul li a.active {
   background-color: #ffffff;
   box-shadow: none;
 }
 
 #nav.alt,
-#reg.alt {
+#nav2.alt {
   position: fixed;
   top: 0;
   padding: 0.5em 1em;
@@ -3467,12 +3472,12 @@ body.is-preload #header.alt .logo {
 }
 
 #nav.alt ul li,
-#reg.alt ul li {
+#nav2.alt ul li {
   margin: 0 0.175em;
 }
 
 #nav.alt ul li a,
-#reg.alt ul li a {
+#nav2.alt ul li a {
   font-size: 0.9em;
 }
 
@@ -3480,7 +3485,8 @@ body.is-preload #header.alt .logo {
   #nav {
     display: none;
   }
-  #reg {
+
+  #nav2 {
     display: inline-block;
   }
 

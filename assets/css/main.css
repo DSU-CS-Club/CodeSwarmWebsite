@@ -3323,55 +3323,19 @@ body.is-preload #header.alt .logo {
   text-align: center;
 }
 
-#nav2 {
-  -moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease,
-    border-top-right-radius 0.2s ease, padding 0.2s ease;
-  -webkit-transition: background-color 0.2s ease,
-    border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease,
-    padding 0.2s ease;
-  -ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease,
-    border-top-right-radius 0.2s ease, padding 0.2s ease;
-  transition: background-color 0.2s ease, border-top-left-radius 0.2s ease,
-    border-top-right-radius 0.2s ease, padding 0.2s ease;
-  background-color: #ffffff;
-  color: #636363;
-  position: absolute;
-  width: 64em;
-  max-width: calc(100% - 4em);
-  padding: 1em;
-  background-color: #f7f7f7;
-  border-top-left-radius: 0.25em;
-  border-top-right-radius: 0.25em;
-  cursor: default;
-  text-align: center;
-  display: none;
-}
 
-#nav button,
-#nav2 button {
-  display: none;
-}
 
 #nav input,
 #nav select,
 #nav textarea,
-#nav2 input,
-#nav2 select,
-#nav2 textarea {
-  color: #636363;
-}
+
 
 #nav a:hover,
-#nav2 a:hover {
-  color: #636333;
-}
+
 
 #nav strong,
 #nav b,
-#nav2 strong,
-#nav2 b {
-  color: #636363;
-}
+
 
 #nav h1,
 #nav h2,
@@ -3486,9 +3450,7 @@ body.is-preload #header.alt .logo {
     display: none;
   }
 
-  #nav2 {
-    display: inline-block;
-  }
+
 
   #nav + #main {
     padding-top: 0;
